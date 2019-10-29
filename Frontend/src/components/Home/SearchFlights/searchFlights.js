@@ -35,8 +35,23 @@ class SearchFlights extends Component {
             to: false
         },
         validationErrorMsg: '',
-        showErrorSnackbar: false
+        showErrorSnackbar: false,
+        searchFrom: '',
+        searchTo: ''
     }
+
+    //Search From & To 
+    searchFrom = (event) => {
+        this.setState({ searchFrom: event.target.value })
+        //console.log(event.target.value)
+    }
+    searchTo = (event) => {
+        this.setState({ searchTo: event.target.value })
+        //  console.log(event.target.value)
+    }
+    clearValueFrom = () => { this.setState({ searchFrom: '' }) }
+    clearValueTo = () => { this.setState({ searchTo: '' }) }
+
     formatDate = (dateString) => {
         let date = new Date(dateString),
             mnth = ("0" + (date.getMonth() + 1)).slice(-2),
@@ -133,6 +148,7 @@ class SearchFlights extends Component {
 
     }
     render() {
+        var searchFrom = this.state.searchFrom
         const Airports1 = []
         airportsData.airports.map((data, i) => {
             Airports1.push({
@@ -140,7 +156,16 @@ class SearchFlights extends Component {
                 airportCityCode: data.IATA_code
             })
         })
-        // console.log(this.state.errorMsg)
+        //Filteration in From and To Menu
+        const match = (s) => {
+            const p = Array.from(s).reduce((a, v, i) => `${a}[^${s.substr(i)}]*?${v}`, '');
+            const re = RegExp(p);
+            return Airports1.filter(v => v.airportCity.toUpperCase().match(re));
+        };
+        const filteredFrom = match(this.state.searchFrom.toUpperCase())
+        const filteredTo = match(this.state.searchTo.toUpperCase())
+        const AirportsFrom = this.state.searchFrom !== '' ? filteredFrom : Airports1
+        const AirportsTo = this.state.searchTo !== '' ? filteredTo : Airports1
         return (
             <div className='container shiftUp '>
                 <Snackbar
@@ -155,7 +180,7 @@ class SearchFlights extends Component {
                     ContentProps={{
                         'aria-describedby': 'message-id',
                     }}
-                    message={<span id="message-id errorMsg"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> {this.state.validationErrorMsg}</span>}
+                    message={<span id="message-id errorMsg"><i className="fa fa-exclamation-circle" aria-hidden="true"></i> {this.state.validationErrorMsg}</span>}
                 />
 
                 <div className="card shadow-sm" style={{ borderRadius: '20px' }}>
@@ -183,15 +208,6 @@ class SearchFlights extends Component {
                         <hr></hr>
                         <div className='row'>
                             <div className='col-lg-3 col-md-6 col-sm-3 col-xtra-3 '>
-                                {/* <Dropdown
-                                    className='depMenu'
-                                    placeholder='Select Country'
-                                    fluid
-                                    search
-                                    selection
-
-                                /> */}
-
 
                                 <div className='dropdown'>
                                     <a data-toggle="dropdown" variant="outlined" className='p-3 buttonFrom btn-default btn-block' style={{ lineHeight: '1.9rem' }}>
@@ -201,9 +217,17 @@ class SearchFlights extends Component {
                                     <div className="dropdown-menu menuFrom">
                                         <div className='menu-header'>
                                             <span className='fa fa-map-marker icon-loc'></span>
-                                            <span className='menu-srch'><input type='text' placeholder='Where from ?' /></span>
+                                            <span className='menu-srch'>
+                                                <form>
+                                                    <input type='text' placeholder='Where from ?' onChange={this.searchFrom} />
+                                                    <input type='reset' value='X' onClick={this.clearValueFrom} />
+                                                </form>
+                                            </span>
+
+
                                         </div>
-                                        {Airports1.map((data, i) => {
+
+                                        {AirportsFrom.map((data, i) => {
                                             return (
                                                 <div key={i} className="dropdown-item"
                                                     onClick={() => this.handleFrom(data.airportCityCode, data.airportCity)}
@@ -234,9 +258,14 @@ class SearchFlights extends Component {
                                     <div className="dropdown-menu menuTo">
                                         <div className='menu-header'>
                                             <span className='fa fa-map-marker icon-loc'></span>
-                                            <span className='menu-srch'><input type='text' placeholder='Where to ?' /></span>
+                                            <span className='menu-srch'>
+                                                <form>
+                                                    <input type='text' placeholder='Where to ?' onChange={this.searchTo} />
+                                                    <input type='reset' value='X' onClick={this.clearValueTo} />
+                                                </form>
+                                            </span>
                                         </div>
-                                        {Airports1.map((data, i) => {
+                                        {AirportsTo.map((data, i) => {
                                             return (
                                                 <div key={i} className="dropdown-item"
                                                     onClick={() => this.handleTo(data.airportCityCode, data.airportCity)}

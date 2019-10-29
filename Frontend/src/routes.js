@@ -13,6 +13,7 @@ import FlightAnimation from './components/Widgets/FlightAnimation/FlightAnimatio
 import Login from './components/Authentication/Login/login';
 import Signup from './components/Authentication/Signup/signup';
 import Email from './components/email';
+import FlightSinglePage from './components/Home/FlightSinglePage/flightSinglePage';
 
 
 
@@ -37,6 +38,7 @@ class Routes extends Component {
                     <Route path="/login" exact component={Login} />
                     <Route path="/signup" exact component={Signup} />
                     <Route path="/email" exact component={Email} />
+                    <Route path="/single-page" exact component={FlightSinglePage} />
 
 
                 </Switch>

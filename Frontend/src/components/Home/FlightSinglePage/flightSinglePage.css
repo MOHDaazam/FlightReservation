@@ -1,0 +1,111 @@
+.fd .MuiExpansionPanelSummary-root{
+    background-color: #f8f6f6!important;
+    padding-top: -10px;
+}
+.fd .MuiExpansionPanelDetails-root{
+    display : block !important;
+}
+.fd-h{
+    width: 100%;
+    font-size: 18px;
+}
+.fd-desc-1 .MuiSvgIcon-root{
+     margin-top: -8px;
+}
+
+.fd-h .MuiSvgIcon-root{
+    font-size: 30px!important;
+    margin-top: -6px;
+}
+.fd-h-sub{
+    padding: 1.5%;
+}
+.fd-cities{
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 1%;
+    display: inline-block;
+}
+.flight-icon{
+    display:inline-block;
+}
+.fd-date{
+        font-size: 14px;
+    color: #6a6868;
+}
+.fd-desc-1{
+    margin-top: 0.5%;
+}
+.fd-desc-2{
+    margin-top: 1%;
+}
+.depCity-code{
+    font-size: 20px;
+    padding-right: 5px;
+}
+.arrCity-code{
+    font-size: 20px;
+   
+    padding-right: 5px;
+}
+.time-dep{
+    font-size: 20px;
+    font-weight:bold;
+    font: italic;
+    padding-right: 15%;
+}
+.duration{
+
+    font-size: 14px;
+     color: #6a6868;
+}
+.time-arr{
+    font-size: 20px;
+    font-weight:bold;
+    font: italic;
+   
+}
+.dot-left{
+    height: 15px;
+    width: 15px;
+    margin-top: -20px;
+    border-radius:50%;
+    background-color: #1abc9c;
+}
+.dot-right{
+    height: 15px;
+    width: 15px;
+    margin-top: -20px;
+    border-radius:50%;
+    background-color: #1abc9c;
+}
+.divider-sec hr {
+    width:100%;
+    margin-left: 17%;
+    margin-right: 17%;
+    border-top:1px dotted #000;
+    /*Rest of stuff here*/
+
+}
+.divider-sec .row{
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+.circle-hollow{
+    border: 1px solid #f84342;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+    z-index: 86;
+    margin-top:-23px;
+    margin-left: -5px;
+}
+.center-icon{
+    margin-left: 47%;
+    background-color:white;
+    margin-top: -20px;
+    border-radius: 50%;
+	width: 31px;
+	height: 31px;
+
+}
