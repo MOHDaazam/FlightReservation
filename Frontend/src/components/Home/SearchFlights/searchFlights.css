@@ -1,0 +1,294 @@
+.boxForm{
+    border-radius : 20px;
+    height : auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.shiftUp{
+  margin-top: -178px;
+}
+
+.shiftButtonUp{
+    margin-top: -25px;
+}
+
+.alignFa {
+  font-size:30px;
+  margin-left: 10px;
+ 
+}
+
+.menuFrom{
+    border-radius : 10px;
+    margin-top : -70px;
+    margin-left : -10px;
+    width: 330px !important;
+    max-height: 200px; 
+    overflow: auto; 
+    font-size: 16px;
+}
+.menuTo{
+    border-radius : 10px;
+    margin-top : -70px;
+    margin-left : -10px;
+    width: 280px !important;
+    max-height: 200px; 
+    overflow: auto; 
+    font-size: 16px;
+}
+/* .depMenu .ui.fluid.dropdown{
+    margin-top: 10px;
+    height: 65px;
+} */
+
+.icon-loc{
+ font-size: 20px;
+ color: #3c4043;
+ padding: 20px;
+}
+.icon-plane{
+   font-size: 20px;
+ color: #3c4043;
+ padding-right: 20px;
+}
+.menu-srch input{
+    border: none;
+    outline: none;
+  
+}
+
+.filter-button-title{
+  font-size: 15px;
+  padding-left:44px;
+}
+
+.text-fade{
+  color: #9b9b9b;
+  font-weight: 500;
+  padding-left:45px;
+  padding-top: 4px;
+ 
+  
+}
+@keyframes spin {
+  from {
+      transform:rotate(90deg);
+  }
+  to {
+      transform:rotate(0deg);
+  }
+}
+.rotated-image {
+  transform: rotate(180deg);
+}
+
+
+.buttonFrom{
+    border: 1px solid #dadce0;
+    background-color: white;
+    color:black ;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom : 15px;
+    margin-top : 10px;
+    border-radius: 5px;
+    height : 65px;
+    white-space: nowrap; 
+
+    overflow: hidden;
+    text-overflow: "----"; 
+   
+}
+.date-pickerPadding{
+ padding : 0px 48px
+}
+
+@media (max-width: 500px){
+
+.col-xtra-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+}
+@media (max-width: 768px){
+
+  .buttonFrom{
+      margin-bottom: 10px
+  }
+  .alignFa {
+      margin-top : 2px;
+    font-size:25px;
+    margin-left: 12px;
+  }
+    
+    }
+
+.search-button{
+        background-color: rgb(44, 69, 82);
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        width: 30%;
+        display: inline-block;
+        height: auto;
+        line-height: 50px;
+        border-radius: 25px;
+        margin-top:6px;
+        padding-left: 6px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+}
+#div1 {
+    background: grey;
+    display: inline-block;
+  }
+
+  .right,
+  .left {
+    height: 50px;
+    width: 25px;
+    border: 1px #dadce0 solid;
+    background-color:white!important;
+  }
+  
+  .right {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-left: -3px;
+    border-left:none!important;
+  }
+  
+  .left {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-right: 12px;
+    border-right:none!important;
+  }
+
+  #roundedCard{
+      border-radius:100%;
+  }
+  .faExhange { 
+      transform: scale(2.0,1.5); 
+      margin-top: 17px;
+      color:#1abc9c;
+      margin-left:-15px
+
+    }
+  
+  .search .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+
+
+
+
+  .trip_button_default  {
+    border: 1px grey solid;
+    color: grey ;
+    text-align: center;
+    text-decoration: none!important;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 25px;
+    margin-top: 6px;
+    margin-right:10px;
+}
+
+.trip_button_active{
+    background-color: rgb(44, 69, 82);
+    color: white;
+    text-align: center;
+    text-decoration: none!important;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 25px;
+    margin-top: 6px;
+    margin-right:10px;
+
+}
+
+.fa-check{
+    padding-right : 2px;
+}
+
+
+.MuiPickersToolbar-toolbar {
+    background-color: #1abc9c !important;
+}
+.MuiPickersDay-daySelected {
+ background-color: #1abc9c !important;
+}
+.MuiButton-textPrimary {
+    color : #1abc9c!important;
+}
+.MuiInputBase-input{
+ width : auto !important;
+ cursor : pointer;
+}
+.MuiFormHelperText-root.Mui-error{
+    display:none !important;
+}
+
+@media (max-width:390px){
+  .MuiInputBase-input{
+    font-size: 0.8rem !important;
+  }
+  #returnDate{
+    font-size:0.8rem!important;
+  }
+  .text-fade{
+    padding-top: 8px;
+  }
+  .filter-button-title{
+    font-size: 12px;
+    padding-left:19px;
+  }
+  .fa_from{
+    margin-left: -5px
+  }
+
+}
+
+
+.MuiSnackbarContent-root{
+  margin-top: 50%;
+  background-color: #cc3300 !important;
+}
+@media (min-width: 600px){
+  .MuiSnackbarContent-root{
+    margin-top: 100px !important;
+  }
+  .MuiSnackbarContent-message{
+    font-size: 16px;
+    padding:0px !important;
+  }
+  
+}
+@media (max-width: 600px){
+  .MuiSnackbarContent-root{
+    margin-top: 55px !important;
+    flex-grow: 0 !important;
+  }
+  .MuiSnackbarContent-message{
+    font-size: 13px;
+    padding:0px !important;
+  }
+}

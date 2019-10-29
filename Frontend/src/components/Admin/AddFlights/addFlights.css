@@ -1,0 +1,52 @@
+.labelText{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom:-5px;
+}
+.title{
+    margin-bottom: 30px
+}
+.react-time-picker__clock{
+    display: none
+} 
+
+.react-time-picker__button svg{
+    display: none;
+}
+.react-time-picker__button:enabled{
+    display: none
+}
+.react-time-picker__wrapper{
+    border : none !important
+}
+.ui.input>input{
+    width:140%;
+}
+.react-datepicker__day-name{
+    color:white!important;
+}
+.react-datepicker__header{
+    background-color: #1abc9c!important;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
+    color:white!important;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range{
+    background-color: #1abc9c!important;
+}
+.react-datepicker__day--keyboard-selected:hover, .react-datepicker__month-text--keyboard-selected:hover, .react-datepicker__quarter-text--keyboard-selected:hover{
+    background-color:  #1abc9c!important;
+}
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected{
+    background-color: #1abc9c!important;
+}
+.col_ticket_fare{
+    padding-left: 84px !important;
+}
+.modal{
+    height:200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

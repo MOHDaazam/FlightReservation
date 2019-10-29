@@ -1,0 +1,7 @@
+{
+    "editor.fontWeight": "bold",
+    "editor.formatOnPaste": true,
+    "editor.fontFamily": "Consolas",
+    "editor.formatOnSaveTimeout": 740,
+    "editor.formatOnSave": true
+}

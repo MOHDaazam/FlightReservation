@@ -1,0 +1,150 @@
+.txt1{
+        width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+}
+.txt2{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 3%; 
+}
+.label1{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -10%;
+}
+.label2{
+    margin-top: 3%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -10%;
+}
+.label3{
+    margin-top: 3%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -10%;
+}
+.resendOtp{
+    text-align: right;
+    color: #1abc9c;
+    cursor: pointer;
+    position: absolute;
+    top: 67px;
+    width: 100px;
+    right: 5px;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+ 
+}
+.inputOtp{
+    width: 100%;
+    float: left;
+    position: relative;
+    
+}
+.inputPass1{
+    width: 100%;
+    float: left;
+    position: relative;
+    
+}
+.inputPass2{
+    width: 100%;
+    float: left;
+    position: relative;
+    
+}
+.inputOtp input{
+   letter-spacing:30px;
+    float: left;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    padding-left: 9%;
+    margin-top: 1%;
+    outline: 0;
+    background: url(../Assets/images/smartphone-call.png) 2% no-repeat ;
+    background-size: 20px 20px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.inputOtp input::placeholder{
+    letter-spacing: 0px!important;
+    font-size: 15px!important;
+}
+.inputPass1 input{
+    letter-spacing: 3px;
+    float: left;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    padding-left: 9%;
+    margin-top: 1%;
+    outline: 0;
+    background: url(../Assets/images/locked.png) 2% no-repeat ;
+    background-size: 20px 20px;
+    font-size: 25px;
+    height: 40px;
+   
+}
+.inputPass1 input::placeholder{
+    font-size: 15px!important;
+    letter-spacing: 0px!important;
+}
+.inputPass2 input{
+    letter-spacing: 3px;
+    float: left;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    padding-left: 9%;
+    margin-top: 1%;
+    outline: 0;
+    background: url(../Assets/images/unlocked.png) 2% no-repeat ;
+    
+    background-size: 20px 20px;
+    font-size: 25px;
+    height: 40px;
+    
+}
+.inputPass2 input::placeholder{
+    font-size: 15px!important;
+    letter-spacing: 0px!important;
+}
+
+.btn-special{
+        border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    background: #4263c1;
+    cursor: pointer;
+    font-family: open sans;
+    font-size: 17px;
+    font-weight: normal;
+    height: 43px;
+    -webkit-appearance: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.pencil{
+    color: #1abc9c;
+    padding-left: 10px!important;
+    font-size: 25px !important;
+    cursor: pointer;
+}
+.pencil:hover{
+    color: rgb(44, 69, 82);;
+   
+}

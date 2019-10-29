@@ -1,0 +1,13 @@
+.matched-msg {
+     font-size: 16px;
+     padding-top: 10px;
+     margin-bottom: -12px;
+     color: green;
+}
+.not-matched-msg{
+  font-size: 16px;
+     padding-top: 10px;
+     margin-bottom: -12px;
+     color: red;
+}
+

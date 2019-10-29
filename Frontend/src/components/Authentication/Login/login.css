@@ -1,0 +1,162 @@
+
+.MuiFormControl-marginDense{
+        width: 100%;
+}
+.MuiInputBase-input{
+    width: 100% !important;
+}
+#dialog-auth .MuiDialog-paperWidthSm{
+width: 100%;
+}
+
+.MuiFormLabel-root{
+    font-family: inherit!important;
+    font-size: 1.25rem!important;
+}
+
+.btn-login-page{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    border: none!important;
+    margin-top: 10px;
+    background-color: #1abc9c;
+    left: 0;
+	right: 0;
+    margin: auto;
+    padding: 7px 10px 7px 10px;
+    font-weight: 500!important;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 1.1875em;
+    margin-top: 20px;
+    
+}
+.btn-login-facebook{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    line-height: 1.1875em;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 99, 179);
+    margin: auto;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    transition: top 0.1s ease 0s, box-shadow 0.1s ease 0s, border-color 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s;
+    padding: 8px 16px;
+    border-color: rgb(64, 99, 179);
+    
+}
+.btn-login-facebook:hover{
+        background-color: rgba(64, 99, 179,0.9);
+}
+.btn-login-google{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    left: 0;
+	right: 0;
+    margin: auto;
+    padding: 7px 10px 7px 10px;
+    font-weight: 500!important;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 1.1875em;
+    margin-top: 10px;
+    border-width: 1px;
+    color: black;
+    border: 1px solid rgb(205, 209, 212);
+    margin-bottom: 10px;
+    
+}
+.btn-login-google:hover{
+    background-color: rgba(205, 209, 212,0.6);
+    
+}
+.loginpage-title{
+    margin-bottom: -100px;
+}
+.or-separator{
+    left: 0;
+    color: grey;
+    right: 0;
+    width: 35px;
+    height: 36px;
+    border-radius: 65%;
+    padding: 8px 4px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    margin-left: 47%;
+    margin-right: 40%;
+    position: absolute;
+    margin-top: -50px;
+}
+
+.dialog-content-login{
+   margin-left: 4.5%;
+   margin-right: 4.5%;
+}
+.divider-login{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fa-fb-custom{
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+.svg-google{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.sign-up-link{
+    color:#1abc9c;
+    cursor: pointer;
+}
+.sign-up-link-container{
+    font-size: 16px;
+    font-family: inherit;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+.loginpage-title{
+    font-weight: 700!important;
+    font-size: 25px !important;
+    font-family: inherit!important;
+    margin-top: 10px;
+    margin-left: 6%;
+    margin-bottom: 10px;
+}
+.dailog-row{
+    margin-left:0px !important;
+    margin-right:0px !important;
+}
+
+@media screen and (max-width: 768px) {
+    #dialog-auth .MuiDialog-paperWidthSm{
+        height: 100%;
+        width: 100%;
+    }
+   .MuiDialog-paperScrollPaper{
+       max-height: 100%!important;
+   }
+   .MuiDialog-paper{
+       margin: 0px!important;
+   }
+}

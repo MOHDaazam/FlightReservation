@@ -1,0 +1,19 @@
+.flightBanner{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-top: 8px;
+    height : auto;
+   
+
+}
+
+.card-box{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    background: #1abc9c;
+    border-radius: 10px;
+}
