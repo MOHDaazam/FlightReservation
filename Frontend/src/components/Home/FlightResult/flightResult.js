@@ -9,6 +9,7 @@ import { URL } from '../../Utils/util';
 import { PriceComaSeparator } from '../../Widgets/PriceComaSeparator/PriceComaSeparator';
 import { dateToMonthFormat } from '../../Widgets/dateToMonthFormat/dateToMonthFormat';
 import FlightAnimation from '../../Widgets/FlightAnimation/FlightAnimation';
+import FlightSinglePage from '../FlightSinglePage/flightSinglePage';
 
 class FlightResults extends Component {
 
@@ -32,14 +33,7 @@ class FlightResults extends Component {
         trip: '',
         showLoader: true,
         showFlightDetailsFooter: false,
-
-
-
-
-
-
-
-
+        showBookPage: false
     }
     componentDidMount = () => {
         if (this.props.location !== undefined) {
@@ -223,7 +217,7 @@ class FlightResults extends Component {
 
     //ONCLICK FUNCTIONS
     makeCardOneWayActive = (details) => {
-        console.log(details)
+        // console.log(details)
 
 
         //Changing css of card
@@ -267,24 +261,15 @@ class FlightResults extends Component {
 
     }
 
-
-
-    //ONCLICK FUNCTIONS
-
-    // componentDidMount() {
-    //     setTimeout(() => {
-    //         this.setState({
-    //             showFlightDetailsFooter:false
-    //         })
-    //     }, 3000);
-    // }
-    // componentWillUnmount() {
-    //     clearInterval(this.setTimeout);
-    //   }
-
+    openBookPage = () => {
+        this.setState({ showBookPage: true })
+    }
+    closeBookPage = () => {
+        this.setState({ showBookPage: false })
+    }
     render(props) {
         const classes = this.useStyles
-        console.log(this.state.FlightsRoundTrip)
+        console.log(this.state.showBookPage)
 
 
         return (
@@ -310,7 +295,7 @@ class FlightResults extends Component {
                             />
                             :
                             < div style={{ marginTop: '70px' }} >
-
+                                <FlightSinglePage status={this.state.showBookPage} handleClose={this.closeBookPage} />
                                 <div className='nav shadow-sm p-3 nav-custom justify-content-center' style={this.nav_border}>
                                     <div className='row'>
                                         {this.state.trip === 'Round-trip' ?
@@ -525,10 +510,10 @@ class FlightResults extends Component {
                                                         <span style={this.flight_details_rate_single}> <span className='total_single'>Total : </span>₹ {this.state.ticketFare}{this.state.ticketFareReturn}</span>
                                                     </div>
                                                 </div>
-                                                <div className='col' >
+                                                <div className='col' onClick={this.openBookPage}>
                                                     <a href='#' style={this.book_button} className='book-button-width book_button_width_single'>
                                                         <i className="fa fa-paper-plane " style={{ fontSize: '25px', marginRight: '10px' }} aria-hidden="true"></i>
-                                                        <span className='book-button-title' >BOOK</span>
+                                                        <span className='book-button-title' onClick={this.openBookPage}>BOOK</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -570,10 +555,10 @@ class FlightResults extends Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className='col' >
-                                                    <a href='#' style={this.book_button} className='book-button-width'>
+                                                <div className='col' onClick={this.openBookPage}>
+                                                    <a style={this.book_button} className='book-button-width'>
                                                         <i className="fa fa-paper-plane " style={{ fontSize: '25px', marginRight: '10px' }} aria-hidden="true"></i>
-                                                        <span className='book-button-title ' >BOOK</span>
+                                                        <span className='book-button-title' >BOOK</span>
                                                     </a>
                                                 </div>
                                             </div>
